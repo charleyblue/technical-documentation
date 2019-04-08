@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding:0;
+}
+#title {
+  background: lightgray;
+  text-align: center;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px 15px;
+}
+.aside--img {
+  width: 50%;
+  height: auto;
+}
