@@ -6,12 +6,20 @@
   background: lightgray;
   text-align: center;
 }
-#grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px 15px;
-}
-.aside--img {
-  width: 50%;
-  height: auto;
+@media screen and (max-device-width:480px){
+  .aside--img {
+    display: none;
+  }
+ }
+ 
+@media  only screen and (min-device-width:480px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px 15px;
+  }
+  .aside--img {
+    width: 50%;
+    height: auto;
+  }
 }
