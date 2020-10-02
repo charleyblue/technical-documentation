@@ -4,106 +4,112 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do Not Electrocute Yourself!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
   </head>
   <body>
+    <div class="outer-container">
+      <div class="title-container">
+        <header id="title" class="header">
+          <h1 id="headline" class="header--title"><em>Please <strong>Do Not</strong> Electrocute Yourself!</em></h1>
+          <h2 id="subheadline" class="header--subtitle">Safety on the factory floor</h2>
+        </header>
+      </div>
 
-    <header id="title" class="header">
-      <h1 id="headline" class="header--title"><em>Please <strong>Do Not</strong> Electrocute Yourself!</em></h1>
-      <h2 id="subheadline" class="header--subtitle">Safety on the factory floor</h2>
-    </header>
+      <div id="grid">
+        <aside class="nav-left">
+          <nav id="nav-bar">
+            <header id="nav-bar-title">Electrical Safety On The Job!</header>
+            <ul id="nav-bar-list">
+              <li><a href="#Stay_Out">Stay Out</a></li>
+              <li><a href="#Key_Definitions">Key Definitions</a></li>
+              <li><a href="#Safety_Categories">Safety Categories</a></li>
+              <li><a href="#General_Safety_Principles">General Safety Principles</a></li>
+              <li><a href="#Your_Safety_Mindset">Your Safety Mindset</a></li>
+            </ul>
+          </nav>
+        </aside>
 
-    <!-- <div id="grid"> -->
-      <nav id="nav-bar">
-        <header id="nav-bar-title">Electrical Safety On The Job!</header>
-        <ul id="nav-bar-list">
-          <li><a href="#Stay_Out">Stay Out</a></li>
-          <li><a href="#Key_Definitions">Key Definitions</a></li>
-          <li><a href="#Safety_Categories">Safety Categories</a></li>
-          <li><a href="#General_Safety_Principles">General Safety Principles</a></li>
-          <li><a href="#Your_Safety_Mindset">Your Safety Mindset</a></li>
-        </ul>
-      </nav>
+        <main id="main-doc">
 
-      <main id="main-doc">
+          <section id="Stay_Out" class="main-section">
+            <header class="main-section-title">Stay Out</header>
+            <h3 class="main-section-subtitle">Keep Yourself Out of the Circuit!</h3>
+            <p>Keeping yourself out of an electrical circuit requires diligence and knowledge. You will need to learn the basics of how electricity flows through a circuit, what a circuit is, and constant awareness of your surroundings. </p>
+            <p>Electrical shocks, arc flash explosions, and electrocutions can be avoided and you are the key to make this happen.</p>
+            <p>Electrical shocks happen when you become part of an electrical circuit and the current flows through your body, usually to ground. Electrocution is when the current is high enough to cause death by disrupting the heart or other vital organs. Your body becomes part of the circuit conductor and if the current level is high enough, you become unable to release yourself from the current path.</p>
+            <p>Arch flash incidences occur when the current flows from the circuit to a short-circuit to ground. Usually a high energy and high temperature explosion occurs and if you are in the blast zone, severe injuries including <code>blunt-force-trauma</code>, <code>extreme-burns</code>, or <code>death</code> can be the result.</p>
+            <p>Over the course of this discussion, we will cover many <code>common-sense</code> ideas for you to use in your day-to-day activities to stay safe and alive. Stay tuned-in and <code>stay-alive</code>!</p>
+          </section>
 
-        <section id="Stay_Out" class="main-section">
-          <header class="main-section-title">Stay Out</header>
-          <h3 class="main-section-subtitle">Keep Yourself Out of the Circuit!</h3>
-          <p>Keeping yourself out of an electrical circuit requires diligence and knowledge. You will need to learn the basics of how electricity flows through a circuit, what a circuit is, and constant awareness of your surroundings. </p>
-          <p>Electrical shocks, arc flash explosions, and electrocutions can be avoided and you are the key to make this happen.</p>
-          <p>Electrical shocks happen when you become part of an electrical circuit and the current flows through your body, usually to ground. Electrocution is when the current is high enough to cause death by disrupting the heart or other vital organs. Your body becomes part of the circuit conductor and if the current level is high enough, you become unable to release yourself from the current path.</p>
-          <p>Arch flash incidences occur when the current flows from the circuit to a short-circuit to ground. Usually a high energy and high temperature explosion occurs and if you are in the blast zone, severe injuries including <code>blunt-force-trauma</code>, <code>extreme-burns</code>, or <code>death</code> can be the result.</p>
-          <p>Over the course of this discussion, we will cover many <code>common-sense</code> ideas for you to use in your day-to-day activities to stay safe and alive. Stay tuned-in and <code>stay-alive</code>!</p>
-        </section>
+          <section id="Key_Definitions" class="main-section">
+            <header class="main-section-title">Key Definitions</header>
+            <h3 class="main-section-subtitle">Let's consider some basic terminology about electricity.</h3>
+            <div class="main-section-definitions">
+              <dl>
+                <dt>Circuit</dt>
+                <dd>A complete electrical path for electrons to flow from source, through a load, and back to source. When you turn on a light switch, the electrons flow from the circuit breaker panel, through the house conductors, through the lamp, and back to the panel.</dd>
+                <dt>Conductor</dt>
+                <dd>Material used for electrons to flow through a circuit in a controlled fashion. Copper and aluminum wire, printed circuit boards, and cables are some conductors.</dd>
+                <dt>Insulator</dt>
+                <dd>Materials that do not easily allow electrons to flow through them. Insulators are used to keep the flow of electrons in a wire from contacting people and other materials.</dd>
+                <dt>Load</dt>
+                <dd>An electrical device that performs a task when electricity flows through it. The lamp in the conductor example is a load device. Work is performed by the electrical device.</dd>
+                <dt>Current</dt>
+                <dd>the flow of electrons through a circuit. Current allows for the conversion of the form of energy and work to be performed.</dd>
+                <dt>Voltage</dt>
+                <dd>A force that pushes electrons through a conductor allowing work to happen through a load device.</dd>
+                <dt>Arc Flash Event</dt>
+                <dd>An arc flash event is a high energy discharge to ground event that can result in explosive forces that can cause severe burns and blunt-force injuries or death. The sudden release of energy results in an electrical arc flash burst and concussive blast. They are typical in older industrial equipment but can occur even in benign seeming home electrical systems.</dd>
+                <dt>Ground</dt>
+                <dd>A ground is usually set as zero reference volts and establishes several functionalities. The ground wire in an electrical circuit is an emergency return to source path that will set-up an imbalance that is supposed to trip a working circuit breaker protective device.</dd>
+              </dl>
+            </div>
 
-        <section id="Key_Definitions" class="main-section">
-          <header class="main-section-title">Key Definitions</header>
-          <h3 class="main-section-subtitle">Let's consider some basic terminology about electricity.</h3>
-          <div class="main-section-definitions">
-            <dl>
-              <dt>Circuit</dt>
-              <dd>A complete electrical path for electrons to flow from source, through a load, and back to source. When you turn on a light switch, the electrons flow from the circuit breaker panel, through the house conductors, through the lamp, and back to the panel.</dd>
-              <dt>Conductor</dt>
-              <dd>Material used for electrons to flow through a circuit in a controlled fashion. Copper and aluminum wire, printed circuit boards, and cables are some conductors.</dd>
-              <dt>Insulator</dt>
-              <dd>Materials that do not easily allow electrons to flow through them. Insulators are used to keep the flow of electrons in a wire from contacting people and other materials.</dd>
-              <dt>Load</dt>
-              <dd>An electrical device that performs a task when electricity flows through it. The lamp in the conductor example is a load device. Work is performed by the electrical device.</dd>
-              <dt>Current</dt>
-              <dd>the flow of electrons through a circuit. Current allows for the conversion of the form of energy and work to be performed.</dd>
-              <dt>Voltage</dt>
-              <dd>A force that pushes electrons through a conductor allowing work to happen through a load device.</dd>
-              <dt>Arc Flash Event</dt>
-              <dd>An arc flash event is a high energy discharge to ground event that can result in explosive forces that can cause severe burns and blunt-force injuries or death. The sudden release of energy results in an electrical arc flash burst and concussive blast. They are typical in older industrial equipment but can occur even in benign seeming home electrical systems.</dd>
-              <dt>Ground</dt>
-              <dd>A ground is usually set as zero reference volts and establishes several functionalities. The ground wire in an electrical circuit is an emergency return to source path that will set-up an imbalance that is supposed to trip a working circuit breaker protective device.</dd>
-            </dl>
-          </div>
+          </section>
+          <section id="Safety_Categories" class="main-section">
+            <header class="main-section-title">Safety Categories</header>
+            <h3 class="main-section-subtitle">Outlining Your Safety</h3>
+            <ul class="safety-cat-list">
+              <li>General Safety Principles</li>
+              <li>Your Safety Mindset</li>
+              <li>Arc Flash Prevention</li>
+              <li>Electric Shock Prevention</li>
+              <li>If in Doubt, Ask for Help!</li>
+            </ul>
+          </section>
 
-        </section>
-        <section id="Safety_Categories" class="main-section">
-          <header class="main-section-title">Safety Categories</header>
-          <h3 class="main-section-subtitle">Outlining Your Safety</h3>
-          <ul class="safety-cat-list">
-            <li>General Safety Principles</li>
-            <li>Your Safety Mindset</li>
-            <li>Arc Flash Prevention</li>
-            <li>Electric Shock Prevention</li>
-            <li>If in Doubt, Ask for Help!</li>
-          </ul>
-        </section>
+          <section id="General_Safety_Principles" class="main-section">
+            <header class="main-section-title">General Safety Principles</header>
+            <h3 class="main-section-subtitle">How to go home every day?</h3>
+            <p>Safety on the job should be at the forefront of every team members daily routine. Thinking about safety and what is required while performing your daily duties is one of the most important tasks that everyone must carry out.</p>
+            <h4>Safety Checklist</h4>
+            <form action="index.html">
+              <label for="ppe">
+                <input id="ppe" type="checkbox"> PPE &mdash; Personal Protective Equipment
+              </label><br>
+              <label for="arc-flash">
+                <input id="arc-flash" type="checkbox"> Arc Flash Clothing
+              </label><br>
+              <label for="brain">
+                <input id="brain" type="checkbox"> Brain Power
+              </label><br>
+              <label for="equip">
+                <input id="equip" type="checkbox"> Test Equipment
+              </label><br>
+            </form>
+          </section>
 
-        <section id="General_Safety_Principles" class="main-section">
-          <header class="main-section-title">General Safety Principles</header>
-          <h3 class="main-section-subtitle">How to go home every day?</h3>
-          <p>Safety on the job should be at the forefront of every team members daily routine. Thinking about safety and what is required while performing your daily duties is one of the most important tasks that everyone must carry out.</p>
-          <h4>Safety Checklist</h4>
-          <form action="index.html">
-            <label for="ppe">
-              <input id="ppe" type="checkbox"> PPE &mdash; Personal Protective Equipment
-            </label><br>
-            <label for="arc-flash">
-              <input id="arc-flash" type="checkbox"> Arc Flash Clothing
-            </label><br>
-            <label for="brain">
-              <input id="brain" type="checkbox"> Brain Power
-            </label><br>
-            <label for="equip">
-              <input id="equip" type="checkbox"> Test Equipment
-            </label><br>
-          </form>
-        </section>
+          <section id="Your_Safety_Mindset" class="main-section">
+            <header class="main-section-title">Your Safety Mindset</header>
+            <h3 class="main-section-subtitle">Keep your head in the game.</h3>
+            <p>Keeping your head in the game is the best preventative measure everyone on the factory floor can take to stay safe while earning a living. Always ask your boss if you are not sure how to perform a task.</p>
+            <p>Engage critical thinking skills everyday. When learning a new task, system, or process, ask, read, or wait before attempting an adjustment or repair. We want everyone to go home to their families each and every day.</p>
+            <p></p>
+          </section>
+        </main>
+      </div>
+    </div>
 
-        <section id="Your_Safety_Mindset" class="main-section">
-          <header class="main-section-title">Your Safety Mindset</header>
-          <h3 class="main-section-subtitle">Keep your head in the game.</h3>
-          <p>Keeping your head in the game is the best preventative measure everyone on the factory floor can take to stay safe while earning a living. Always ask your boss if you are not sure how to perform a task.</p>
-          <p>Engage critical thinking skills everyday. When learning a new task, system, or process, ask, read, or wait before attempting an adjustment or repair. We want everyone to go home to their families each and every day.</p>
-          <p></p>
-        </section>
-      </main>
-    <!-- </div> -->
     <script scr="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript">
       const freecodecampCdn = window.bundle;
     </script>

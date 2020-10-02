@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding:0;
+  box-sizing: border-box;
 }
 body {
-font-size: 16px;
+font-size: 62.5%;
 }
 #title {
   background: #262626;
@@ -11,21 +12,21 @@ font-size: 16px;
   text-align: center;
   position: fixed;
   width:100%;
-  
+  bottom: 0;
+  height: auto;
 }
 #nav-bar {
   background: #262626;
   color: white;
   padding-left: 4rem;
+  height: auto;
   position: fixed;
-  top: auto;
-  left: 0;
-  height: 100%;
-  width: 20vw;
+  top:0;
+  bottom: 0;
 }
 
 #nav-bar-title {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 #nav-bar-list {
@@ -33,7 +34,7 @@ font-size: 16px;
 }
 
 #nav-bar-list li {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   padding: 2rem 1.5rem;
 }
 
@@ -43,13 +44,23 @@ font-size: 16px;
 }
 
 #main-doc {
-
 }
 
+#main-doc::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 main {
   background: white;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-left: 2rem;
 
 }
@@ -61,11 +72,11 @@ header {
   padding: 2rem 0;
 }
 .header--title {
-  font-size: 2.4em;
+  font-size: 2.4rem;
 }
 .header--subtitle {
   padding-top: 1rem;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .main-section {
@@ -83,31 +94,22 @@ p {
 }
 
 .main-section-title {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 500;
   text-decoration: underline;
 }
 dt {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-variant: small-caps;
 }
-@media screen and (max-device-width:480px){
-  .aside--img {
-    display: none;
-  }
- }
 
-@media  only screen and (min-device-width:480px) {
+
+@media screen and (max-width:480px) {
   #grid {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 20px 15px;
+    display: flex;
+    flex-direction: column;
   }
-  .aside--img {
-    width: 50%;
-    height: auto;
-  }
-}
+
 .safety-cat-list li {
   margin-left:3rem;
 }
