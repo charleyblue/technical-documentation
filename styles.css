@@ -9,11 +9,19 @@ font-size: 16px;
   background: #262626;
   color: white;
   text-align: center;
+  position: fixed;
+  width:100%;
+  
 }
 #nav-bar {
   background: #262626;
   color: white;
   padding-left: 4rem;
+  position: fixed;
+  top: auto;
+  left: 0;
+  height: 100%;
+  width: 20vw;
 }
 
 #nav-bar-title {
@@ -34,12 +42,16 @@ font-size: 16px;
 
 }
 
+#main-doc {
+
+}
+
 main {
   background: white;
   color: black;
   font-size: 1.2em;
   margin-left: 2rem;
-  width: 80%;
+
 }
 header {
   padding-top: 2rem;
