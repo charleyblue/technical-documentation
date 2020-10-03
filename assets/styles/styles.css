@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 
@@ -43,18 +43,16 @@ p {font-size: 1rem;}
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-
 }
 
-#nav-bar {
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.3) 75%,rgba(0,0,0,.3) 100%);
-  /* background: #222; */
+#navbar {
+  background: linear-gradient(to top,rgba(0,0,0,.2) 20%, rgba(0,0,0,.4) 75%, rgba(0,0,0,.8) 100%);
+  width: 100%;
 }
 
 #nav-bar-title {
-  color: #333;
-  font-size: 1.5rem;
+  color: #eee;
+  font-size: 1.8rem;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -64,12 +62,20 @@ p {font-size: 1rem;}
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-between;
-  height: 2.5rem;
+  height: auto;
   padding-bottom: 2rem;
+  list-style: none;
 }
 
+#nav-bar-list li {
+  margin: 1rem;
+}
 #nav-bar-list a {
-  color: #fff;
+  color: #000;
+  font-size: 1.3em;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: .5rem;
 }
 
 #nav-bar-list a:hover {
@@ -81,6 +87,55 @@ p {font-size: 1rem;}
 #main-doc {
   margin: 1rem;
 }
-@media screen and (min-width: 601px) {
+
+.main-section-title {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 980px) {
+
+  #title-container {
+    position: fixed;
+    height: 20vh;
+    top: 0;
+    left: 0;
+  }
+
+  #outer-container {
+    width: 100vw
+  }
+  #main-doc {
+    margin-top: 30vh;;
+    float: right;
+    width: 65%;
+  }
+  #main-doc::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #navbar {
+    position: fixed;
+    float: left;
+    height: 100vh;
+    top: 27vh;;
+    margin-top: 0;
+    width: 30%;
+  }
+
+  #nav-bar-list {
+    flex-flow: column nowrap;
+    margin: 2rem 1rem;
+  }
+
+  #navbar::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  #Stay_Out {
+    margin-top: 2vw;
+  }
 
 }
